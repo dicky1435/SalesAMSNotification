@@ -1,2 +1,2 @@
 
-Notification for SaleAMS
+Notification for SalesAMS
