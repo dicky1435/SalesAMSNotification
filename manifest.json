@@ -1,0 +1,22 @@
+{
+  "name": "Blers CS Robot",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>", "*://*/*"],
+      "js": [
+        "js/app.js",
+        "execute.js"
+      ]
+    }
+  ],
+  "background" : {
+    "service_worker": "execute.js"
+  },
+  "permissions": ["notifications", "tabs", "activeTab"],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}
